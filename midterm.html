@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML Form</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body style="background-image: url(https://st3.depositphotos.com/1000992/18919/i/600/depositphotos_189198696-stock-photo-abstract-polygonal-geometric-background-blue.jpg);">
+
+<div class="container mt-3">
+              <div class="container">
+   <h1 id="title" class="text-center">Travel Survey Form</h1>
+   <p id="description" class="text-center" > Thank you for taking the time to response for a Survey about travelling!  </p>
+</div>
+
+  <div class="mt-4 p-5 bg-primary text-white rounded">
+
+  <div id="survey-form">
+
+   <div class="container mt-3">
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="email">Name:</label>
+      <input type="email" class="form-control" id="name"  name="email" value="Enter your name">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email"  name="email" value="Enter your email">
+      <br>
+      <label for="email">Age:</label>
+      <input type="number" class="form-control" id="number"  name="email" placeholder="Enter your age" min="0" max="100">
+     </div>
+  </form>
+</div>
+</div>
+<div class="container mt-3">
+  <p>With whom, Do you travel most often?</p>
+  <form action="/action_page.php">
+    <select class="form-select" id="sel1" name="sellist1">
+    <option>Select your answer</option>
+     <option>Family</option>
+     <option>Friends States</option>
+     <option>Colleogues</option>
+     <option>Alone</option>
+     </select>
+ </form>
+</div>
+
+
+<div class="container mt-3">
+  <p>What is your employment status?</p>
+  <form action="/action_page.php">
+    <select class="form-select" id="sel2" name="sellist2">
+    <option>Student</option>
+     <option>Employed</option>
+     <option>Self-employed</option>
+     <option>Unemployed</option>
+     <option>Retired</option>
+    <option>Other</option>
+   </select>
+ </form>
+</div>
+
+
+
+<div class="container mt-3">
+  <p>What is your gender?</p>
+  <form action="/action_page.php">
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option01" >
+      <label class="form-check-label" for="radio1">Male</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option02">
+      <label class="form-check-label" for="radio2">Female</label>
+    </div>
+  </form>
+</div>
+
+  <form action="/action_page.php">
+  <p>Where would you like to travel this year?</p>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check1" name="op1" value="something" >
+      <label class="form-check-label" for="check1">Europe</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check2" name="op2" value="something">
+      <label class="form-check-label" for="check2"> Asia</label>
+    </div>
+ <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check3" name="op3" value="something">
+      <label class="form-check-label" for="check3"> Africa</label>
+    </div>
+     <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check4" name="op4" value="something">
+      <label class="form-check-label" for="check4"> Australia</label>
+    </div>
+     <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check5" name="op5" value="something">
+      <label class="form-check-label" for="check5"> North America</label>
+    </div>
+     <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check6" name="op6" value="something">
+      <label class="form-check-label" for="check6"> South America</label>
+    </div>
+  </form>
+
+
+
+
+
+
+<div class="container mt-3">
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="comment">Any questions or suggestions?</label>
+      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Enter your comment"></textarea>
+    </div>
+  </form>
+</div>
+<form action="/action_page.php">
+<button type="submit" class="btn btn-warning container-fluid">Submit</button>
+</form>
+</div>
+</div>
+ </body>
+ </html>
